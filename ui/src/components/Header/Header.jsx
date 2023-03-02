@@ -10,7 +10,7 @@ export default function Header() {
     <header>
       <h1 onClick={() => navigate('/closet')}>🦄 Sadie's Closet</h1>
       <div>
-        <TbHanger onClick={() => navigate('/closet')}/>
+        <TbHanger onClick={() => navigate('/closet')}Closet/>
         <GiClothes onClick={() => navigate('/outfit')}/>
       </div>
     </header>

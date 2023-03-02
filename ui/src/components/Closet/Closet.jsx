@@ -1,6 +1,6 @@
 import React from 'react'
 import Item from '../Item/Item'
-// import Filter from '../Filter/Filter'
+import Dropdown from '../Dropdown/Dropdown'
 
 export default function Closet({clothes, setCurrentTop, setCurrentBottom}) {
 
@@ -17,7 +17,7 @@ export default function Closet({clothes, setCurrentTop, setCurrentBottom}) {
 
   return (
     <section>
-      {/* <Filter /> */}
+      <Dropdown />
       {items}
     </section>
   )
