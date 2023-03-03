@@ -2,7 +2,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  height: 10vh;
+  height: 77px;
   background-image: url(src/assets/unicorn-wallpaper.png);
   background-size: cover;
   color: rgb(0, 78, 188);

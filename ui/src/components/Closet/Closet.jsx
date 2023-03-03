@@ -52,10 +52,10 @@ export default function Closet({clothes, setCurrentTop, setCurrentBottom}) {
 
   return (
     <section className='closet-section' >
-      {/* <div className='closet-title'> */}
+      <div className='closet-title'>
         <p><TbHanger/> Click a top and bottom to create your outfit!</p>
-      {/* </div> */}
       <Dropdown selectedValue={selectedValue} setSelectedValue={setSelectedValue}/>
+      </div>
       <div className='closet'>
         {selectedItems()}
       </div>
