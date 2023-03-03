@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import { useEffect } from 'react'
-import Item from '../Item/Item'
+import Item from '../item/Item'
 import './App.css'
-import Header from '../Header/Header'
-import Closet from '../Closet/Closet'
-import Outfit from '../Outfit/Outfit'
+import Header from '../header/Header'
+import Closet from '../closet/Closet'
+import Outfit from '../outfit/Outfit'
 import { Routes, Route } from 'react-router-dom'
-import ErrorPage from '../ErrorPage/ErrorPage'
+import ErrorPage from '../errorPage/ErrorPage'
 
 function App() {
   const [clothes, setClothes] = useState([])
@@ -21,11 +21,11 @@ function App() {
           
   }, []) 
 
-  const something = clothes.map(item => {
-    return (
-      <Item id={item.id} image={item.img_url}/>
-    )
-  })
+  // const something = clothes.map(item => {
+  //   return (
+  //     <Item id={item.id} image={item.img_url}/>
+  //   )
+  // })
  
 
   return (
@@ -33,8 +33,16 @@ function App() {
       <Header />
         {/* {something} */}
       <Routes>
-        <Route path='/closet' element={<Closet clothes={clothes} setCurrentTop={setCurrentTop} setCurrentBottom={setCurrentBottom} />} />
-        <Route path='/outfit' element={<Outfit setCurrentTop={setCurrentTop} setCurrentBottom={setCurrentBottom} />} />
+        <Route path='/closet' element={<Closet 
+          clothes={clothes} 
+          setCurrentTop={setCurrentTop} 
+          setCurrentBottom={setCurrentBottom} />} />
+        <Route path='/outfit' element={<Outfit 
+          clothes={clothes}
+          currentTop={currentTop}
+          currentBottom={currentBottom}
+          setCurrentTop={setCurrentTop} 
+          setCurrentBottom={setCurrentBottom} />} />
         <Route path='*' element={<ErrorPage />} />
       </Routes>
     </main>

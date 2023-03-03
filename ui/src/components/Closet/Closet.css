@@ -1,0 +1,21 @@
+.closet-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.closet-title {
+  display: flex;
+}
+
+h2 {
+  margin: 0;
+}
+
+.closet {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+
+

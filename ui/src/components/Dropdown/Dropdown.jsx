@@ -1,17 +1,14 @@
 import React from 'react'
+import { useState } from 'react'
 
-export default function Dropdown() {
+export default function Dropdown({ selectedValue, setSelectedValue }) {
 
-
-
+  // value={selectedValue}
   return (
-    <form>
-      <label for="filterClothes"></label>
-      <select  name="clothes" id="filterClothes">
-        <option value="All Clothes">All Clothes</option>
-        <option value="Tops">Tops</option>
-        <option value="Bottoms">Bottoms</option>
-      </select>
-    </form>
+    <select  name="clothes" id="filterClothes" onChange={(e) => setSelectedValue(e.target.value)}>
+      <option value="All clothes">All Clothes</option>
+      <option value="top">Tops</option>
+      <option value="bottom">Bottoms</option>
+    </select>
   )
 }

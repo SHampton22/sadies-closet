@@ -8,7 +8,7 @@ export default function Item({id, image, type, handleClick}) {
 
   return (
       <div  id={id} >
-        <img src={image} width={150} />
+        <img src={image} width={150} onClick={() => handleClick(id)}/>
         <p>{type}</p>
       </div>
   )

@@ -1,3 +1,23 @@
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
   border: solid red 5px;
+  height: 10vh;
 }
+
+h1 {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .nav-hanger,
+.nav-outfit {
+  width: 2em;
+  height: 2em;
+} */
+
