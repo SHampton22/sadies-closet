@@ -9,5 +9,14 @@ body {
   line-height: 1.5;
   font-weight: 400;
   font-size: x-large;
+
+
 }
 
+@media (max-width: 550px) {
+  :root { font-size: medium; }
+}
+
+@media (min-width: 551px) {
+  :root { font-size: x-large; }
+}
