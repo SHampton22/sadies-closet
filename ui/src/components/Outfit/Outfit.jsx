@@ -1,10 +1,8 @@
-import React from 'react'
-import './Outfit.css'
 import { GiClothes } from 'react-icons/gi'
+import './Outfit.css'
 
-export default function Outfit({clothes, currentTop, setCurrentTop, currentBottom, setCurrentBottom}) {
-  console.log("currentTop", currentTop)
-  console.log("currentBottom", currentBottom)
+export default function Outfit({ currentTop, setCurrentTop, currentBottom, setCurrentBottom }) {
+
   const clearOutfit = () => {
     setCurrentTop({})
     setCurrentBottom({})

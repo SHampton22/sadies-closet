@@ -1,11 +1,10 @@
-import  React from 'react'
+import { useState } from 'react'
+import { TbHanger } from 'react-icons/tb'
 import Item from '../item/Item'
 import Dropdown from '../dropdown/Dropdown'
-import { useState } from 'react'
 import './Closet.css'
-import { TbHanger } from 'react-icons/tb'
 
-export default function Closet({clothes, setCurrentTop, setCurrentBottom}) {
+export default function Closet({ clothes, setCurrentTop, setCurrentBottom }) {
   const [selectedValue, setSelectedValue] = useState('')
 
   const selectedItems = () => {
@@ -47,8 +46,6 @@ export default function Closet({clothes, setCurrentTop, setCurrentBottom}) {
       />
     )
   })
-
-
 
   return (
     <section className='closet-section' >

@@ -1,11 +1,11 @@
-import React from 'react'
 import { useNavigate, NavLink } from 'react-router-dom'
-import './Header.css'
 import { TbHanger } from 'react-icons/tb'
 import { GiClothes } from 'react-icons/gi'
+import './Header.css'
 
 export default function Header() {
   const navigate = useNavigate()
+  
   return (
     <header>
       <h1 onClick={() => navigate('/closet')}>🦄 Sadie's Closet</h1>
