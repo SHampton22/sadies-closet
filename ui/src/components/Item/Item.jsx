@@ -1,4 +1,5 @@
 import React from 'react'
+import './Item.css'
 
 export default function Item({id, image, type, handleClick}) {
 
@@ -8,8 +9,8 @@ export default function Item({id, image, type, handleClick}) {
 
   return (
       <div  id={id} >
-        <img src={image} width={150} onClick={() => handleClick(id)}/>
-        <p>{type}</p>
+        <img className='closet-img' src={image} onClick={() => handleClick(id)}/>
+        {/* <p>{type}</p> */}
       </div>
   )
 }

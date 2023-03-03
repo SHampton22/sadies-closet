@@ -15,10 +15,10 @@ export default function Outfit({clothes, currentTop, setCurrentTop, currentBotto
       <p className='outfit-title'><GiClothes/> my next outfit!</p>
       <div className='outfit'>
         <div className='outfit-top'>
-          <img src={currentTop.img_url} width={150}/>
+          <img className='outfit-img' src={currentTop.img_url} width={150}/>
         </div>
         <div className='outfit-bottom'>
-          <img src={currentBottom.img_url} width={150}/>
+          <img className='outfit-img' src={currentBottom.img_url} width={150}/>
         </div>
       </div>
         <button className='clear-outfit' onClick={() => clearOutfit()}>clear</button>
