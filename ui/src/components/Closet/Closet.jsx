@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { TbHanger } from 'react-icons/tb'
-import Item from '../item/Item'
-import Dropdown from '../dropdown/Dropdown'
+import Item from '../Item/Item'
+import Dropdown from '../Dropdown/Dropdown'
 import './Closet.css'
 
 export default function Closet({ clothes, setCurrentTop, setCurrentBottom }) {
