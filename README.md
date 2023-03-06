@@ -11,9 +11,6 @@ This is an app for a 10 year old who loves unicorns and has a hard time choosing
 [Deployed Frontend](https://sadies-closet.vercel.app/)
 [Deployed Backend](https://sadies-closet-api.vercel.app/api/v1/clothes)
 
-
-
-###[wireframe](link)
 ---
 ## Setup
 ### Installation Instructions For Front-End
