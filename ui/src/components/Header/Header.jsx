@@ -8,9 +8,9 @@ export default function Header() {
   
   return (
     <header>
-      <h1 onClick={() => navigate('/closet')}>🦄 Sadie's Closet</h1>
+      <h1 onClick={() => navigate('/')}>🦄 Sadie's Closet</h1>
       <nav>
-        <NavLink to='/closet' className={'nav-hanger'} >my clothes<TbHanger className='nav-hanger'/></NavLink>
+        <NavLink to='/' className={'nav-hanger'} >my clothes<TbHanger className='nav-hanger'/></NavLink>
         <NavLink to='/outfit' className={'nav-outfit'} >my outfit<GiClothes className='nav-outfit'/></NavLink>
       </nav>
     </header>

@@ -22,7 +22,7 @@ export default function App() {
     <main>
       <Header />
       <Routes>
-        <Route path='/closet' element={<Closet 
+        <Route path='/' element={<Closet 
           clothes={clothes} 
           setCurrentTop={setCurrentTop} 
           setCurrentBottom={setCurrentBottom} />} />
