@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
-import Header from '/src/components/header/Header.jsx'
-import Closet from '/src/components/closet/Closet'
-import Outfit from '/src/components/outfit/Outfit'
-import ErrorPage from '/src/components/errorPage/ErrorPage'
+import Header from '../header/Header.jsx'
+import Closet from '../closet/Closet'
+import Outfit from '../outfit/Outfit'
+import ErrorPage from '../errorPage/ErrorPage'
 import './App.css'
 
 function App() {
