@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
-import Header from '../header/Header.jsx'
+import Header from '../header/Header'
 import Closet from '../closet/Closet'
 import Outfit from '../outfit/Outfit'
 import ErrorPage from '../errorPage/ErrorPage'
 import './App.css'
 
-function App() {
+export default function App() {
   const [clothes, setClothes] = useState([])
   const [currentTop, setCurrentTop] = useState({})
   const [currentBottom, setCurrentBottom] = useState({})
@@ -38,4 +38,3 @@ function App() {
   )
 }
 
-export default App
