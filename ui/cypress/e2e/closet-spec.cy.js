@@ -1,7 +1,7 @@
 describe('Closet', () => {
   beforeEach(() => {
-    cy.intercept('GET', 'http://localhost:5500/api/v1/clothes', { fixture: 'clothes' })
-    cy.visit('http://127.0.0.1:5173/closet')
+    cy.intercept('GET', 'https://sadies-closet-api.vercel.app/api/v1/clothes', { fixture: 'clothes' })
+    cy.visit('http://127.0.0.1:5173/')
   })
 
   it('should see the name of the application', () => {

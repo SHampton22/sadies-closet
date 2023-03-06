@@ -1,7 +1,7 @@
 describe('Outfit', () => {
   beforeEach(() => {
     cy.intercept('GET', 'http://localhost:5500/api/v1/clothes', { fixture: 'clothes' })
-    cy.visit('http://127.0.0.1:5173/closet')
+    cy.visit('http://127.0.0.1:5173/')
     cy.get('.closet-img').eq(1).click()
     cy.get('.closet-img').eq(2).click()
     cy.get('a.nav-outfit').click()
@@ -37,12 +37,12 @@ describe('Outfit', () => {
 
   it('should be able to click the app name to go back to the closet', () => {
     cy.get('h1').click()
-    cy.url().should('include', '/closet')
+    cy.url().should('include', '/')
   })
 
   it('should be able to click the my clothes link to go back to the closet', () => {
     cy.get('a.nav-hanger').click()
-    cy.url().should('include', '/closet')
+    cy.url().should('include', '/')
   })
 
 })

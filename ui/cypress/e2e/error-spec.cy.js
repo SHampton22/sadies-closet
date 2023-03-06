@@ -20,12 +20,12 @@ describe('Error', () => {
 
   it('should be able to click the app name to go back to the closet', () => {
     cy.get('h1').click()
-    cy.url().should('include', '/closet')
+    cy.url().should('include', '/')
   })
 
   it('should be able to click the my clothes link to go back to the closet', () => {
     cy.get('a.nav-hanger').click()
-    cy.url().should('include', '/closet')
+    cy.url().should('include', '/')
   })
 
   it('should be able to click the my outfit link to go back to the outfit', () => {
