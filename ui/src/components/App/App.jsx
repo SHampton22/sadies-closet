@@ -12,7 +12,7 @@ function App() {
   const [currentBottom, setCurrentBottom] = useState({})
 
   useEffect(() => {
-      fetch("http://localhost:5500/api/v1/clothes")
+      fetch("https://sadies-closet-api.vercel.app/api/v1/clothes")
           .then(res => res.json())
           .then(data => setClothes(data.clothes));  
   }, []) 
